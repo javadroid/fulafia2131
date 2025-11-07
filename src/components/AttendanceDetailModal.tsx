@@ -29,7 +29,7 @@ const AttendanceDetailModal: React.FC<AttendanceDetailModalProps> = ({
     : 0;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center z-50 p-4 overflow-y-auto sm:items-center">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-start h-screen justify-center z-50 p-4 overflow-y-auto sm:items-center">
       <div className="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col">
         <div className="bg-gradient-to-r from-teal-500 to-blue-500 text-white p-4 sm:p-6 flex items-center justify-between">
           <div>
@@ -44,8 +44,8 @@ const AttendanceDetailModal: React.FC<AttendanceDetailModalProps> = ({
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 sm:p-6 border-b">
-          <div className="bg-blue-50 p-4 rounded-lg text-center">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-4 p-4 sm:p-6 border-b ">
+          <div className="bg-blue-50 p-4 rounded-lg text-center ">
             <User className="w-8 h-8 text-blue-600 mx-auto mb-2" />
             <div className="text-2xl font-bold text-blue-900">{registeredStudents.length}</div>
             <div className="text-sm text-blue-700">Registered</div>

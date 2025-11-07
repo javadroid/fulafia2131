@@ -93,7 +93,7 @@ const AttendanceReports: React.FC<AttendanceReportsProps> = ({
             <select
               value={selectedCourse}
               onChange={(e) => setSelectedCourse(e.target.value)}
-              className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+              className="px-4 py-2 w-40 sm:w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
             >
               <option value="">All Courses</option>
               {allCourses.map(course => (
