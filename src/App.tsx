@@ -271,7 +271,7 @@ function App() {
                 className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition-colors"
               >
                 <Home className="w-4 h-4" />
-                <span>Home</span>
+                {/* <span>Home</span> */}
               </button>
             )}
           </div>

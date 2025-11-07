@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BarChart3, Users, Calendar, Download, Filter, Eye } from 'lucide-react';
+import { BarChart3, Users,  Download, Filter, Eye } from 'lucide-react';
 import { Student, CourseAttendance } from '../types';
 import AttendanceDetailModal from './AttendanceDetailModal';
 
@@ -80,7 +80,7 @@ const AttendanceReports: React.FC<AttendanceReportsProps> = ({
   return (
     <div className="max-w-6xl mx-auto space-y-8">
       <div className="bg-white rounded-xl shadow-lg p-8">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex flex-col items-center justify-between mb-6 sm:flex-row gap-3  ">
           <div className="flex items-center space-x-3">
             <div className="bg-teal-100 p-2 rounded-lg">
               <BarChart3 className="w-6 h-6 text-teal-600" />
